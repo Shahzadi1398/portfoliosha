@@ -1,0 +1,18 @@
+:host {
+    flex: 0 0 50%;
+    margin: 1rem 0;
+  }
+.p-readmore{
+    color: #000;
+    font-size: 20px; 
+    font-weight: 600;
+}  
+.p-readmore img{
+    margin-left: 2px;
+    transition: all .5s;
+    transform: translateX(0);
+}
+
+.p-readmore:hover img{
+    transform: translateX(5px);
+}

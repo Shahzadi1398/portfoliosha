@@ -1,0 +1,5 @@
+{{ content }}
+<div class ="p-readmore">
+    <a href="#" *ngIf="!isContentToggled" (click)="toggleContent()" i18n>Read More <img src ="assets/img/vector.png" alt = "The icon for readmore arrow" width="18"/></a>
+    <a href="#" *ngIf="isContentToggled" (click)="toggleContent()" i18n>Read Less</a>
+</div>

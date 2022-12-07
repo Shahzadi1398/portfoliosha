@@ -1,0 +1,25 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="p-profile"></div>
+            </div>
+            <div class="col-sm-7 .p-rgt-sec">
+                <div>
+                    <span class="p-tag"> Software Engineer </span>
+                    <h1 class="mt-4"> Shahzadi Parveen </h1>
+                    <app-readmore  class= "p-des" *ngFor="let item of items"
+                    [content]="item"
+                    [limit]="200"
+                    [completeWords]="true"></app-readmore>
+                </div>
+                <div class="btn-con">
+                    <button style="font-size:24px" (click)="downloadPDF()">Download CV <i class="fa fa-download"></i></button>
+                </div>
+                <app-tehcnical-skills></app-tehcnical-skills>
+            </div>
+        </div>
+    </div>
+</section>
+<app-services></app-services>
+<app-contact></app-contact>
